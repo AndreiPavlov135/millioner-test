@@ -8,6 +8,7 @@ import Start from "./components/start";
 function App() {
   return (
     <div>
+      {/* <Home /> */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Start />} />
