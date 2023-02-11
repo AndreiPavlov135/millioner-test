@@ -1,0 +1,53 @@
+.timerBox {
+  height: 40vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.timerCircle {
+  height: 30vh;
+  width: 30vh;
+  border-radius: 15vh;
+  background-color: white;
+  color: white;
+  font-size: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../../public/timer.jpg) no-repeat center ;
+  background-size: 102%;
+  border: 3px solid white;
+  
+  overflow: hidden;
+
+  opacity: 0.8;
+}
+.timerProgress {
+  height: 0.5vw;
+  display: flex;
+  gap: 0.4vw;
+}
+.timerItem {
+  width: 0.8vw;
+  height: 0.8vw;
+  border-radius: 0.4vw;
+  background-color: aqua;
+}
+
+@media (max-width: 850px) {
+  .timerBox {
+    height: 30vh;
+  }
+}
+
+@media (max-width: 1000px) {
+  .timerProgress {
+    display: none;
+  }
+
+  .timerCircle {
+    height: 20vh;
+    width: 20vh;
+  }
+}

@@ -1,0 +1,46 @@
+.headerBox {
+  height: 20vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.headerHints {
+  display: flex;
+  gap: 3vw;
+  margin: 0 5vw;
+}
+
+.headerItem {
+  width: 10vh;
+  height: 7vh;
+  background-color: grey;
+  border-radius: 5vh;
+  border: 1vh solid white;
+  cursor: pointer;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.headerItem:hover {
+  background-color: orange;
+}
+
+@media (max-width: 850px) {
+  .headerItem {
+    width: 5vh;
+    height: 5vh;
+    background-color: red;
+    border-radius: 5vh;
+  }
+
+  .headerBox {
+    justify-content: space-around;
+    height: 15vh;
+  }
+
+  .headerHints {
+    margin: 0;
+  }
+}
